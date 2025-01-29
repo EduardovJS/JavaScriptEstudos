@@ -3,32 +3,26 @@ console.log("Isso é um alerta no console"); // Apresenta informação no termin
 alert("Isso é um alerta"); // Outra forma de apresentar informação na tela, uma caixa de alerta
 alert(5 + 5)
 
-// Entendo os operadores em JavaScript 
 
-// São esses os operadores : + - * / = ++ -- += && || etc.. 
+// Funções 
+function soma (valor1, valor2) {
+    return valor1 + valor2;
+}
+document.getElementById("texto").innerHTML = soma(10,20);
 
-// Para verificar se é o VALOR é o mesmo.
-var valor1, valor2
-valor1 = 5;
-valor2 = "5"; 
-total = (valor1 == valor2) 
-alert(total) // Vai dar true, pois o valor é mesmo, não é comparado o TIPO. 
+//Obejtos 
+//São variáveis com muitos valores dentros
+//Ex: const carro = {marca: "ford", modelo: "ka", ano 2015}
+//Valores dentro do objeto são chamados de propriedades. 
+//Objetos também podem ter metódos. Um metódo é uma função colacada dentro de uma propriedade. 
 
-//Para verificar se é o VALOR é o TIPO é o mesmo. 
-valor1 = 5;
-valor2 = "5";
-total = (valor1 === valor2)
-alert(total) // Vai dar false, pois o valor é mesmo, porém o TIPO é diferente.
-
-valor1 = 5;
-valor2 = "5";
-total = (valor1 !== valor2)
-alert(total) // Vai dar true, pois o valor é mesmo, porém o TIPO é diferente.
-
-
-// Operador Ternário
-var idade, eleitor;
-idade = 18;
-// Se nao for eleito faz a primeira condição, se não faz a segunda condição.
-eleito = (idade < 18) ? "Não, é eleito" : "Sim, é eleitor";
-alert("Resposta: " + eleito + " idade é de " + idade);
+const carro = {
+    marca: "ford",
+    modelo: "ka",
+    ano: "2015",
+    completo : function(){
+        return "A marca é " + this.marca + " e o modelo: " + this.modelo;
+    }
+}
+alert(carro.ano);
+alert(carro.completo());
