@@ -1,28 +1,36 @@
-document.getElementById("Titulo").innerHTML="Meu primeiro texto <b>JavaScript<b>"; // Passa informações javascript para o html, pegando o Id do elemento e subscrevendo ele usando o innerHTML
-console.log("Isso é um alerta no console"); // Apresenta informação no terminal.
-alert("Isso é um alerta"); // Outra forma de apresentar informação na tela, uma caixa de alerta
-alert(5 + 5)
+// Eventos onclick
+// onclick - Disparado quando recebe um clique. 
+// ondblclick - Disparado quando tem clique duplo.
+// onmouseover - Disparado quando o mouse está sobre. 
+// onmouseout - Disparado quando o mouse é movido para fora do elemento.
+// onmousemove - Disparado quando o mouse é movido no elemento.
+// onmouseup - Disparado no momento em que o botão do mouse é solto
+// onmousedown - Disparado no momento em que o botão do mouse é pressionado
 
-
-// Funções 
-function soma (valor1, valor2) {
-    return valor1 + valor2;
+//onclick
+function EventoClick(){
+    alert("evento de click");
+    document.body.style.backgroundColor = "yellow";
 }
-document.getElementById("texto").innerHTML = soma(10,20);
 
-//Obejtos 
-//São variáveis com muitos valores dentros
-//Ex: const carro = {marca: "ford", modelo: "ka", ano 2015}
-//Valores dentro do objeto são chamados de propriedades. 
-//Objetos também podem ter metódos. Um metódo é uma função colacada dentro de uma propriedade. 
-
-const carro = {
-    marca: "ford",
-    modelo: "ka",
-    ano: "2015",
-    completo : function(){
-        return "A marca é " + this.marca + " e o modelo: " + this.modelo;
-    }
+//dblclick
+function EventoDblClick(){
+    alert("evento de click duplo");
 }
-alert(carro.ano);
-alert(carro.completo());
+
+// Eventos onfocus - Elementos com base em inputs 
+// onfocus - Disparado quando o elemento é focado.
+// onchanger - Disparado quando existe uma mudança no conteudo. "Ao mudar".
+// onblur - Disparado quando o elemento perde o foco. 
+// onkeydown - Disparado quando uma tecla é pressionada. 
+// onkeypress - Disparado quando uma tecla é pressionada e solta. 
+// onkeyup - Disparada quando uma tecla é solta sobre um elemento.
+// onload - Disparada quando a página terminou de ser carrega no body.
+// onresize - Disparada quando há um redimencionamento da janela. 
+
+function limpaTexto(){
+    document.getElementById("campoTexto").value = "";
+}
+
+
+

@@ -10,12 +10,14 @@
     <p id="Titulo"></p>
     <p id="texto"></p>
         <p>
-            <h4>Ultilizado o document.write</h4>
-            <script>
-                document.write("Escrito <u>em document.write</u>");// Pode usar tags html dentro do document.write, será aplicado. 
-                document.write("Soma de 5 + 5 = ", 5 + 5 ); // Pode ser ultilizado para fazer somas.
-             </script>
+            <h4>Ultilizado o document.write</h4>    
+             <button onclick="EventoClick()">Clique Aqui</button> 
+             <button ondblclick="EventoDblClick()">Clique Aqui</button> 
+        </p>  
+        <p>
+            <input onfocus="limpaTexto()" id="campoTexto" style="padding:80px; font-size:40px" type="text" placeholder="Digite alguma coia" value="Ja vem com o texto">   
         </p>
-    <script src="js/index.js"></script>   
-</body>
+    
+    <script src="js/index.js"></script>     
+</body>     
 </html>
